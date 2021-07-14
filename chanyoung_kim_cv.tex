@@ -1,0 +1,205 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ulem}
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{Chanyoung Kim}
+\hfill{\it\footnotesize Updated \today}}
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{flushleft}
+\begin{tabular}{lll}
+% Line 1: Email, GitHub, office location
+\textbf{Email}: kochanha@gmail.com      &
+\hspace{0.55in} \textbf{GitHub}: github.com/kochanha \\
+
+
+% Line 2: Phone number, LinkedIn, citizenship
+\textbf{Phone}: (+82) 10-2823-5277   & 
+\hspace{0.55in} \textbf{LinkedIn}: linkedin.com/in/chanyoung-kim-291b0a1b9/   & 
+\end{tabular}
+\end{flushleft}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+\nohyphens{\color{Violet}{Research interests}}
+& 3D Computer Vision, Autonomous Flight Drones \\
+& \\
+
+% --- Section: Education ---
+
+\color{Violet}{Education} 
+& \textbf{Sejong University} \hfill Seoul, Republic of Korea \\ 
+& B.S in Intelligence Mechatronics Engineering \hfill Mar. 2017 -- Present \\
+%& {\it GPA : 3.85 / 4.5}\\
+& \\
+
+% --- Uncomment the next few lines if you want to include some courses ---
+%& \textbf{Selected coursework}
+%\begin{itemize}[noitemsep,leftmargin=*]
+%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
+%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
+%\end{itemize} \\
+
+
+
+% --- Section: Publications ---
+\nohyphens{\color{Violet}{Publications}} 
+
+& \textbf{Performance Evalutaion on Inference 
+Time of Ocular Disease Classifier Based on Light Embedded 
+Systems} \\
+& DongHyun Sim, \uline{\textbf{Chanyoung Kim}}, Suzy Kwak, Jihyun Bae, Woo Jung 
+Shin \\
+& \textit{The Institute of Electronics and Information Engineers, July. 
+2021}\\
+%& DOI : \href{https://doi.org/10.1109/CSCI51800.2020.00141}{10.1109/CSCI51800.2020.00141}
+& \\
+
+
+% --- Section: Research experience ---
+
+\nohyphens{\color{Violet}{Research experience}} 
+& \textbf{Research Intern, Computer Vision Lab @ Korea University} \\
+& {\it Mentor: Prof. Sangpil Kim (Dept. of AI)} \hfill Feb. 2021 -- Present \\
+& Research event-based 3D computer vision. Study about event based vision and Artificial Intelligence.
+& \\
+% --- Section: Teaching experience ---
+
+{\color{Violet}{Teaching experience}} 
+& \textbf{Korea National Council on Social Welfare} \\ 
+& {\it Mentor} \hfill  Jun. 2020 -- Dec. 2021 \\
+& Mentoring IoT, Arduino and Machine Learning to age between 12~14 \\
+& \\
+& \textbf{LG CNS} \\ 
+& {\it Teaching Assistant} \hfill  July. 2021 -- Present \\
+& AI Coding Mentoring for LG CNS Executives and Employees\\
+& \\
+
+
+% --- Section: Project experience ---
+
+{\color{Violet}{Project experience}} 
+& {\textbf{Seoul Metro}} \\
+& {\textbf{Station Attendant Helper Application}} \hfill Jun. 2019 -- Sep. 2019 \\
+& {\it Seoul Metro}  \\
+& \\
+
+& {\textbf{Ultra-Light Weight TFLite Image Classification Model}} \\
+& {\textbf{for Edge Computing Systems}} \hfill Feb. 2021 -- Jun. 2021 \\
+& {\it GE Appliances a Haier company}  \\
+& \\
+
+& {\textbf{Arial Semantic Segmentation with Drones}} \hfill May. 2021 -- Jun. 2021 \\
+& {\it Personal Project} \\
+& \\
+
+% --- Section: Awards, scholarships, etc. ---
+% --- Note: section title is spread over two lines ---
+
+{\color{Violet}{Awards}} 
+& {\textbf{1st Creative Convergence Nomad Idea Competition}} \\
+& {\textbf{2nd Prize}} \hfill Dec. 2017 \\
+& {\it awarded by the Dean of Software Convergence College, Sejong Univ.}  \\
+& Team topic : "Making a Product Using Dye Sensitized Solar Cells(DSSC)"
+& \\
+& {\textbf{4th Sejong SW Hackathon}} \\
+& {\textbf{2nd Prize}} \hfill Jun. 2018 \\
+& {\it awarded by Directer of Leading University for Excellence in Software Education Project, Sejong Univ.}  \\
+& Team topic : "IoT smart building system for Daeyang AI Center in Sejong Univ."
+& \\
+& {\textbf{2019 Seoul PM Hackathon}} \\
+& {\textbf{5th Prize}} \hfill Jun. 2019 \\
+& {\it awarded by Head of the Seoul Institute of Technology.}  \\
+& Team topic : "PM Mask Recommendation Depending On Personal State and Estimated Life Shortening Prediction based on AI Model"
+& \\
+& {\textbf{XXIII Pyeongchang Olympic Winter Games}} \\
+& {\textbf{Award of Excellence}} \hfill Feb. 2018 \\
+& {\it awarded by President of International Olympic Committee(IOC)}  \\
+& {\textbf{Medal of Contribution}} \hfill Jul. 2019 \\
+& {\it awarded by Republic of Korea Government Minister of Culture, Sports and Tourism}  \\
+& \\
+& {\textbf{Seoul Metro}} \\
+& {\textbf{Award of Certificate}} \hfill Dec. 2019 \\
+& {\it awarded by CEO of Seoul Metro}  \\
+& Awarded for App Development Contribution
+& \\
+& {\textbf{2020 International Robot Contest}} \\
+& {\textbf{4th Prize}} \hfill Nov. 2020 \\
+& {\it AI Mission Challenge}  \\
+& Team topic : "Autonomous Drone Flight"
+& \\
+& {\textbf{2021 Creative Makers Competition}} \\
+& {\textbf{1st Prize}} \hfill Jun. 2021 \\
+& {\it awarded by the Dean of Software Convergence College, Sejong Univ.}  \\
+& Team topic : "Model Optimization Method for Light Embedded Systems"
+&\\
+% --- Section: Various skills (programming, software, languages, etc.) ---
+
+\nohyphens{\color{Violet}{Club Activities}}
+& \textbf{SMARCLE @ Sejong University} \\
+& {\it Vice President} \hfill Sep. 2017 -- Present \\
+& I have established an AI club; led a study and various research. \\
+& www.smarcle.dev\\
+& \\
+
+{\color{Violet}{Skills}} 
+& \textbf{Programming}\\
+& Proficient in: Python \\
+& Familiar with: C++, C \\
+& \\
+& \textbf{Tools}\\
+& Proficient in: MS Office, Tensorflow, Scikit-Learn, Ubuntu \\
+& Familiar with: Pytorch, Unity3D, Photoshop \\
+& \\
+& \textbf{Languages} \\
+& Native Speaker in Korean\\
+& Proficient in English \\
+& Beginer in Japanese\\
+% --- Section: Other interests/hobbies ---
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
